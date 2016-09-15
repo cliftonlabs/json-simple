@@ -37,6 +37,12 @@
     </developers>
     <dependencies>
         <dependency>
+            <!-- For JsonSimpleMessageBodyHandler.java. -->
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.1-m01</version>
+        </dependency>
+        <dependency>
             <!-- For testing basic functionality of the library. -->
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
