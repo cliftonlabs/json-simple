@@ -1,0 +1,39 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/wyxerqysan/cliftonlabs/json-simple/src/main/java:/home/wyxerqysan/cliftonlabs/json-simple/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'JSON.simple 4.0.0 API'
+-linkoffline
+'https://docs.oracle.com/javase/7/docs/api' '/home/wyxerqysan/cliftonlabs/json-simple/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'JSON.simple 4.0.0 API'
+com.github.cliftonlabs.json_simple
+/home/wyxerqysan/cliftonlabs/json-simple/src/main/java = 1625538479378
+/home/wyxerqysan/cliftonlabs/json-simple/target/generated-sources/annotations = 1625538486274
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/index-all.html = 1625538488894
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/constant-values.html = 1625538488854
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/deprecated-list.html = 1625538488894
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/stylesheet.css = 1625538488934
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/serialized-form.html = 1625538488862
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/allclasses-noframe.html = 1625538488930
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/help-doc.html = 1625538488934
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/overview-tree.html = 1625538488886
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/index.html = 1625538488930
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/script.js = 1625538488934
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/allclasses-frame.html = 1625538488930
+/home/wyxerqysan/cliftonlabs/json-simple/target/apidocs/package-list = 1625538488838

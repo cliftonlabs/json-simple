@@ -20,13 +20,13 @@
   <div class="section">
     <h2>Get json-simple</h2>
     <p>
-      Download json-simple's latest release <a href="target/json-simple-3.1.1.jar">jar</a>, <a href="target/json-simple-3.1.1-javadoc.jar">javadocs</a>, and <a href="target/json-simple-3.1.1-sources.jar">source</a>.
+      Download json-simple's latest release <a href="target/json-simple-4.0.0.jar">jar</a>, <a href="target/json-simple-4.0.0-javadoc.jar">javadocs</a>, and <a href="target/json-simple-4.0.0-sources.jar">source</a>.
     </p>
   </div>
   <div class="section">
     <h3>As a Gradle Dependency</h3>
 <pre class="prettyprint">
-runtime 'com.github.cliftonlabs:json-simple:3.1.1'
+runtime 'com.github.cliftonlabs:json-simple:4.0.0'
 </pre>
   </div>
   <div class="section">
@@ -35,7 +35,7 @@ runtime 'com.github.cliftonlabs:json-simple:3.1.1'
 &lt;dependency&gt;
     &lt;groupId&gt;com.github.cliftonlabs&lt;/groupId&gt;
     &lt;artifactId&gt;json-simple&lt;/artifactId&gt;
-    &lt;version&gt;3.1.1&lt;/version&gt;
+    &lt;version&gt;4.0.0&lt;/version&gt;
 &lt;/dependency&gt;
 </pre>
   </div>
@@ -73,6 +73,7 @@ runtime 'com.github.cliftonlabs:json-simple:3.1.1'
         <li>Inline instantation with data for JsonArray and JsonObject.</li>
 		<li>Jsonable interface allows you to define how objects are serialized. With a constructor you can define how objects are deserialized.</li>
         <li>JsonKeys and code self documents your JSON data models.</li>
+        <li>Data model does not use reflection opting for constructors instead.</li>
         <li>Easy data model refactoring when using JsonKeys.</li>
         <li>Fast and light weight.</li>
         <li>Thorough javadocs.</li>
@@ -214,8 +215,6 @@ public class JsonSimpleExample implements Jsonable{
 		String serializedObject;
 		String serializedArray;
 		String jsonPrettyPrinted;
-		String carelessPrettyPrinted;
-		String badPrettyPrinted;
 		String objectPrettyPrinted;
 		String arrayPrettyPrinted;
 		String asString;
@@ -261,8 +260,6 @@ public class JsonSimpleExample implements Jsonable{
 		serializedArray = Jsoner.serialize(deserializedArray);
 		/* You can also pretty print it for your logs with tabs or spaces. */
 		jsonPrettyPrinted = Jsoner.prettyPrint(jsonSerialized);
-		carelessPrettyPrinted = Jsoner.prettyPrint(carelessSerialized, 4);
-		badPrettyPrinted = Jsoner.prettyPrint(badSerialized, 10);
 		objectPrettyPrinted = Jsoner.prettyPrint(serializedObject);
 		arrayPrettyPrinted = Jsoner.prettyPrint(serializedArray);
 		/* JsonObject implement java.util.Map and JsonArray implement java.util.List so you can use the APIs you're
@@ -322,8 +319,6 @@ public class JsonSimpleExample implements Jsonable{
 		System.out.println("Pretty printed JSON:");
 		System.out.println("Jsonable: " + Jsoner.prettyPrint(jsonable.toJson()));
 		System.out.println("JSON: " + jsonPrettyPrinted);
-		System.out.println("Careless: " + carelessPrettyPrinted);
-		System.out.println("Bad: " + badPrettyPrinted);
 		System.out.println("Object: " + objectPrettyPrinted);
 		System.out.println("Array: " + arrayPrettyPrinted);
 		System.out.println();
