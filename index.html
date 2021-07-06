@@ -398,11 +398,14 @@ public class JsonSimpleExample implements Jsonable{
     <p>
       If you've used a version before version 3.0.0 and do not wish to upgrade yet: use version 2.3.1 for the latest backwards compatible version to upgrade 1.* and 2.* code gradually to 3.* style code. Once you're ready to upgrade to 3.* all you need to do is replace import packages with com.github.cliftonlabs.json_simple and replace DeserializationException with JsonException and you'll be good to go.
     </p>
+    <p>
+      If you're using 3.1.1 and wish to upgrade to 4.0.0 simply update any calls to JsonException#getPosition() to expect a long instead of an int. Also replace any calls to Jsoner#prettyPrint(String, int) with Jsoner#PrettyPrint(String) or Jsoner#prettyPrint(Reader, Writer, String, String) for more control on how it is pretty printed.
+    </p>
   </div>
   <div class="section">
     <h2>Authors</h2>
     <p>
-      Davin Loegering designed and developed the 2.* and 3.* versions.
+      Davin Loegering designed and developed the 2.*, 3.*, 4.* versions.
     </p>
     <p>
       Fang Yidong architected and developed the 1.* versions.
